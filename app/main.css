@@ -1,0 +1,15 @@
+/* @tailwind base;
+@tailwind components; */
+@tailwind utilities;
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 24px;
+    background-color: rgba(255,255,255, 0.85);
+    border-radius: 8px;
+    border: 1px solid var(--background);
+}

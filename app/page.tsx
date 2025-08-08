@@ -1,14 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import Header from "../components/Header";
+import ImageSlider from "../components/ImageSlider";
 import profile from "../public/assets/profile_img.png";
+
 export default function Home() {
   return (
     <div>
       <Header />
       <main>
         <div className="inner flex gap-6">
-          <div className="box w-[486px] h-[auto]">왕 큰 이미지</div>
+          <div className="w-[486px] h-[auto] rounded-lg overflow-hidden">
+            <ImageSlider />
+          </div>
           <div className="flex-1 flex flex-col gap-6">
             {/* 상단 */}
             <div className="flex gap-6">
@@ -20,7 +24,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="mt-auto flex-1">
-                <span className="text-white font-bold text-6xl">PM 02:08</span>
+                <span className="text-white font-bold text-6xl">PM 99:99</span>
               </div>
             </div>
             {/* 하단 */}

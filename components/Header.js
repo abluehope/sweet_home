@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Header = () => {
   return (
     <header>
@@ -5,11 +7,17 @@ const Header = () => {
         <nav>
           <ul className="flex gap-16">
             <li>
-              <h1>HOME</h1>
+              <Link href="/">HOME</Link>
             </li>
-            <li>MENU1</li>
-            <li>MENU2</li>
-            <li>MENU3</li>
+            <li>
+              <Link href="/Dream">MENU1</Link>
+            </li>
+            <li>
+              <Link href="/Profile">MENU2</Link>
+            </li>
+            <li>
+              <Link href="/Trpg">MENU3</Link>
+            </li>
           </ul>
         </nav>
       </div>

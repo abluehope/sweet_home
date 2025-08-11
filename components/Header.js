@@ -1,9 +1,11 @@
 import Link from "next/link";
 
-const Header = () => {
+const Header = ({ showBackButton = false, backUrl }) => {
   return (
     <header>
-      <div className="inner h-[100px] flex items-center justify-end">
+      <div className="inner h-[100px] flex items-center justify-between">
+        <div>{showBackButton && <Link href={backUrl}>{"〈"}</Link>}</div>
+
         <nav>
           <ul className="flex gap-16">
             <li>

@@ -33,7 +33,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={pretendard.className}>{children}</body>
+      <body className={`${pretendard.className} tracking-tight`}>
+        {children}
+      </body>
     </html>
   );
 }
